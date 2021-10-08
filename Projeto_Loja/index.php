@@ -8,17 +8,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
 
-     <nav>
+         <nav>
             <a href = "index.php" title = "Home">Home</a>
-     </nav>
+        </nav>
 
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <header>
-           <center> <img src="imagens/logo_loja.png" width="30%" height="30%"/></center>
+           <center> <img src="imagens/logo_loja.png" width="100%" height="100%"/></center>
             <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
                 <div class="container-fluid">
                     <h3>Cardápio</h3>
+
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastrar Produtos</button>
                 </div>
             </nav>

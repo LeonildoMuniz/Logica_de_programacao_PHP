@@ -17,7 +17,7 @@
                 <input type="text" class="form-control" name="descricao" placeholder="Insira a descrição do produto" required/>
                 <br/>
                 <label>Preço</label>
-                <input type="number" class="form-control" name="preco" placeholder="Insira o valor do produto" required/>
+                <input type="number" class="form-control" name="preco" placeholder="Insira o valor do produto" required name="price" min="0" value="0" step="any"/>
                 <br/>
                 <button type="submit" class="btn btn-warning">Cadastrar</button>
             </div>
