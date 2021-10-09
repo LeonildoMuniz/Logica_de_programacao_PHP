@@ -12,7 +12,9 @@
     </head>
     <body>
         <header>
-            <img src="imagens/logo_loja.png" width="100%" height="100%"/>
+            <nav class="navbar sticky-top navbar-light bg-light">
+                <img class="container-fluid" src="imagens/logo_loja.png" width="98%" height="98%"/>
+            </nav>
             <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
                 <div>
                     <a href = "index.php"> <button type="button" class="btn btn-warning" > Cardápio </button> </a>

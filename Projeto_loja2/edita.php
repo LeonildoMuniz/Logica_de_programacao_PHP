@@ -14,8 +14,8 @@
     $preco = $_POST['preco'];
     $produto[$posicao] = $codigo;
     $produto[$posicao+1] = $descricao;
-    $produto[$posicao+1] = $ingredientes;
-    $produto[$posicao+2] = $preco;
+    $produto[$posicao+2] = $ingredientes;
+    $produto[$posicao+3] = $preco;
 
     unlink("produtos.txt");
     rename("produtos2.txt","produtos.txt");

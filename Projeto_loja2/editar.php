@@ -20,7 +20,9 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <header>
-            <center><img src="imagens/logo_loja.png" width="100%" height="100%"/></center>
+            <nav class="navbar sticky-top navbar-light bg-light">
+                <img class="container-fluid" src="imagens/logo_loja.png" width="98%" height="98%"/>
+            </nav>
             <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
                 <div>
                     <a href = "index.php"> <button type="button" class="btn btn-warning" > Cardápio </button> </a>
@@ -49,10 +51,10 @@
                                         <input type="text" class="form-control" name="descricao" value="<?php echo $produto[$posicao+1];?>" required/>
                                         <br/>
                                         <label>Ingredientes</label>
-                                        <input type="text" class="form-control" name="ingredientes" value="<?php echo $produto[$posicao+1];?>" required/>
+                                        <input type="text" class="form-control" name="ingredientes" value="<?php echo $produto[$posicao+2];?>" required/>
                                         <br/>
                                         <label>Preço</label>
-                                        <input type="number" class="form-control" name="preco" value="<?php echo $produto[$posicao+2];?>" required name="price" min="0" value="0" step="any"/>
+                                        <input type="number" class="form-control" name="preco" value="<?php echo $produto[$posicao+3];?>" required name="price" min="0" value="0" step="any"/>
                                         <br/>
                                         <button type="submit" class="btn btn-warning">Cadastrar</button>
                                     </div>
