@@ -30,14 +30,23 @@
                                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg>&nbsp;<b>Editar Registro</b></h4>
                             </div>
                             <div class="card-body text-left">
-                               <!-- Código PHP -->
+                               <?php
+                                    include 'conecta.php';
+                                    $id = $_GET['id'];
+                                    $sql="SELECT * FROM pessoa WHERE id=$id";
+                                    $query = $conn->query($sql);
+                                    while($dados = $query->fetch_assoc()){
+                                        $nome = $dados['nome'];
+                                        $idade = $dados['idade'];
+                                    }
+                               ?>
                             <form action="editar.php?id=<?php echo $id; ?>" method="POST">
                                 <div class="form-group col-7">
                                     <label>Nome</label>
-                                    <input type="text" class="form-control" name="nome" value="" required/>
+                                    <input type="text" class="form-control" name="nome" value="<?php echo $nome;?>" required/>
                                     <br/>
                                     <label>Idade</label>
-                                    <input type="number" class="form-control" name="idade" value="" required/>
+                                    <input type="number" class="form-control" name="idade" value="<?php echo $idade;?>" required/>
                                     <br/>
                                     <button type="submit" class="btn btn-outline-success">Editar</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-outline-primary" href="index.php" role="button">Voltar</a>
                                 </form>
