@@ -13,7 +13,7 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <header>
-            <center><img src="imagens/logo.png" width="20%" height="20%"></center>
+            <center><img src="imagens/logo.png" width="20%" height="20%"/></center>
         </header>
         <div class="container-fluid">
             <section>
@@ -28,17 +28,18 @@
                                 </svg>&nbsp;<b>Login</b></h4>
                             </div>
                             <div class="card-body">
+                                <!-- Formulário de login-->
                                 <form action="login.php" method="POST">
-                                        <div class="form-group">
+                                    <div class="form-group">
                                         <label>Login</label>
-                                        <input type="text" class="form-control" name="login" placeholder="Insira o login" required/>
+                                        <input type="text" class="form-control" name="login" placeholder="Insira o seu login" required/>
+                                        <br/>
                                         <label>Senha</label>
                                         <input type="password" class="form-control" name="senha" required/>
+                                        <br/>
                                         <button type="submit" class="btn btn-outline-success">Logar</button>
                                     </div>
                                 </form>
-                          </body>
-                     </html>
                             </div>
                         </div>
                     </div>
